@@ -11,7 +11,7 @@
 # vytvoření image na dockerhubu:
 ## ve wsl:
 ```
-ls /mnt/d/docker_simple_example
+cd /mnt/d/docker_simple_example
 
 docker build -t muj_image devcontainer/.
 ```
@@ -47,3 +47,4 @@ exit
 docker run --rm  --gpus all --name muj_kontejner3 -v .:/workspace tomasvicar/muj_image:latest python example_code.py example_data/data.txt
 ```
 > jen spustí kod a po doběhnutí zavře (narozdíl od přechozího co otevřelo terminal v dockeru)
+
